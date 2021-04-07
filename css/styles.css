@@ -9,7 +9,7 @@
 body {
     background-color: #fff;
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -17,11 +17,10 @@ body {
 ul {
     list-style: none;
 }
-h2,
-h3 {
-    color: var(--title-text-color);
-}
 
+a {
+    text-decoration: none;
+}
 
 /* site-nav */
 .logo {
@@ -37,6 +36,12 @@ h3 {
 }
 .studio {
    color: #000000;
+}
+.nav-studio {
+    color: var(--accent-color);
+}
+.nav-portfolio {
+    color: var(--accent-color);
 }
 .site-nav {
     font-weight: 500;
@@ -57,6 +62,9 @@ h3 {
 }
 .auth-nav a {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 
@@ -66,7 +74,7 @@ h3 {
     background-color: #2F303A;
 }
 .hero-text {
-    color: white;
+    color: var(--button-accent-text-color);
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 44px;
@@ -79,9 +87,19 @@ h3 {
 }
 
 /* Buttons */
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--button-accent-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
 .button {
     cursor: pointer;
-
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -89,23 +107,25 @@ h3 {
 }
 .button:hover,
 .button:focus {
-    background-color: #2196F3;
-    color: white;
-}
-.button.primary {
     background-color: var(--accent-color);
     color: var(--button-accent-text-color);
-    letter-spacing: 0.06em;
 }
+.filter-menu li {   
+    display:inline-block;
+}
+
 /* Featers */
 
 .feature-title {
+    color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.14px;
 }
-/* working */
 
+
+/* working */
 .working {
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -113,8 +133,12 @@ h3 {
 }
 
 /* portfolio */
-
+.portfolio {
+    color: var(--title-text-color);
+    visibility:hidden;
+}
 .portfolio-title {
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -128,13 +152,13 @@ h3 {
 /* Наша команда / team  */
 
 .team-name {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 
 }
 .team-partner {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
  
@@ -145,8 +169,12 @@ h3 {
 .footer {
     background-color: #2F303A;
 }
+.foot-adress {
+    font-style: normal;
+}
 .adress {
     color: white;
+    
 }
 .contact {
     color: rgba(255, 255, 255, 0.6);
