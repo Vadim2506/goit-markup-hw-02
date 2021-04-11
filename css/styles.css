@@ -91,7 +91,6 @@ a {
     background-color: var(--accent-color);
     color: var(--button-accent-text-color);
     font-family: Roboto;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -136,6 +135,7 @@ a {
 .portfolio {
     color: var(--title-text-color);
     visibility:hidden;
+    font-size: 0;
 }
 .portfolio-title {
     color: var(--title-text-color);
